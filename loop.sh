@@ -5,7 +5,7 @@ fi
 for i in $(seq 1 $1)
 do 
    `sh push.sh`
-   time=`date +'%G-%m-%d %H:%M:%S' -d '-1 days'`
+   time=`date +'%G-%m-%d %H:%M:%S' -d '-120 days'`
    timedatectl set-time "$time"
 done
 
